@@ -8,4 +8,5 @@ This project is written on Javascript/Node.
 ## How to use (if there's an existing database to work with)
 
 Open a command line and navigate to the project directory.
+Run `npm install` to download and install dependencies, particularly the `mysql` Node library.
 Use the command `npm run track` to run the tracking script. 

@@ -1,6 +1,6 @@
 import mysql from 'mysql';
 
-//database connection
+//sql database connection
 const dbconnection = mysql.createConnection({
   host: process.env.ENDPOINT_URL,
   user: process.env.DB_USER,
@@ -20,6 +20,7 @@ const track = () => {
       con.query(tracking_query, (err, result) => {
         if (err) console.log('Error querying the database.');
         else {
+          //display to screen
           console.log(result);
           console.log('Query successful.');
           con.end();
