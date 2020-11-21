@@ -15,7 +15,7 @@ const tracking_query = 'SELECT * from Device LEFT JOIN Report ON Device.ID = Rep
 const track = () => {
   const con = dbconnection;
   con.connect((err) => {
-    if (err) console.log('Error connection to the database.');
+    if (err) console.log('Error connecting to the database.');
     else {
       con.query(tracking_query, (err, result) => {
         if (err) console.log('Error querying the database.');
